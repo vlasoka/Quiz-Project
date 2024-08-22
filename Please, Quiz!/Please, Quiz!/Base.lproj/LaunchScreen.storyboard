@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchBackground" translatesAutoresizingMaskIntoConstraints="NO" id="n57-ZJ-4LB">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="Ujq-Xd-HSM">
+                                <rect key="frame" x="35" y="321.33333333333331" width="323.33333333333331" height="209.66666666666669"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgx-oj-L5s">
+                                        <rect key="frame" x="0.0" y="0.0" width="323.33333333333331" height="91.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="75"/>
+                                        <color key="textColor" name="lightPink"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" name="grey"/>
+                                        <size key="shadowOffset" width="7" height="4"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quiz!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqK-zH-X4n">
+                                        <rect key="frame" x="0.0" y="118.33333333333337" width="323.33333333333331" height="91.333333333333314"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="75"/>
+                                        <color key="textColor" name="lightPink"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" name="grey"/>
+                                        <size key="shadowOffset" width="7" height="4"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="sgx-oj-L5s" firstAttribute="centerX" secondItem="Ujq-Xd-HSM" secondAttribute="centerX" id="MMc-67-tWK"/>
+                                    <constraint firstItem="fqK-zH-X4n" firstAttribute="centerX" secondItem="Ujq-Xd-HSM" secondAttribute="centerX" id="dwI-0P-Nlg"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="n57-ZJ-4LB" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="7oG-Br-Ev7"/>
+                            <constraint firstAttribute="bottom" secondItem="n57-ZJ-4LB" secondAttribute="bottom" id="GgV-Se-iaZ"/>
+                            <constraint firstItem="Ujq-Xd-HSM" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="O2v-Th-le1"/>
+                            <constraint firstItem="n57-ZJ-4LB" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="PgT-ij-GWh"/>
+                            <constraint firstAttribute="trailing" secondItem="n57-ZJ-4LB" secondAttribute="trailing" id="gI5-XI-oHL"/>
+                            <constraint firstItem="Ujq-Xd-HSM" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="l1z-z8-Ab6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="launchBackground" width="313.33334350585938" height="556.66668701171875"/>
+        <namedColor name="grey">
+            <color red="0.32899999618530273" green="0.33300000429153442" blue="0.32899999618530273" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="lightPink">
+            <color red="0.98400002717971802" green="0.95300000905990601" blue="0.98400002717971802" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
